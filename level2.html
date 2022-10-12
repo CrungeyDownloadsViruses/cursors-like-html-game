@@ -1,0 +1,78 @@
+<html>
+<head>
+  <style>
+      
+      .moving {
+          display:inline;
+    background: black;
+    animation-duration: 1s;
+    animation-name: moving;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    
+}
+      .moving2 {
+          display:inline;
+    background: black;
+    animation-duration: 1s;
+    animation-name: moving2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+}
+
+@keyframes moving {
+    from {
+        top: 9%;
+    }
+    to {
+        top: 90%;
+    }
+}
+@keyframes moving2 {
+    from {
+        top: 90%;
+    }
+    to {
+        top: 9%;
+    }
+}
+    </style>
+</head>
+<body>
+<div onmouseover="main()" style="top: 15%; background: black;width: 90%;height:20px; left: 10%; position: absolute;"></div>
+<div onmouseover="main()" style="top: 50%; background: black;width: 95%;height:20px; left: -10%; position: absolute;"></div>
+    <br>
+<div onmouseover="main()" style="background: black;width: 5%;height:100%; left: -5%; display: inline-block;"></div>
+<div onmouseover="main()" style="top: 0%; background: black;width: 5%;height:100%; left: 95%; position: absolute;"></div>
+ <br>
+<div onmouseover="main()" style="top: 85%; background: black;width: 85%;height:20px; left: 15%; position:absolute;"></div>
+<div onmouseover="win()" style= "left: 90%; top: 91%; background: #44ff00;width: 50px;height:50px; position: absolute;"></div>
+<div onmouseover="main()" class="moving">
+    I move up and down
+</div><div onmouseover="main()" class="moving2" style="left: 202px; top: 95%;">
+    I move up and down
+</div><div onmouseover="main()" class="moving" style="left: 393px;">
+    I move up and down
+</div><div onmouseover="main()" class="moving2" style="left: 582px; top: 95%;">
+    I move up and down
+</div><div onmouseover="main()" class="moving" style="left: 753px;">
+    I move up and down
+</div>
+
+<script type="text/javascript">
+
+function main()
+        {
+         window.open("death.html")
+        }
+function win()
+        {
+         window.open("win.html")
+        }
+
+</script>
+
+</body>
+</html>
